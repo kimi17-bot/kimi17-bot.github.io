@@ -13,6 +13,10 @@
     <style>
         body {
             font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            background-image: url('https://github.com/kimi17-bot/GRPKorea/blob/main/1100_real.png?raw=true');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
         }
 
         .section-title {
@@ -62,7 +66,7 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="text-gray-800">
 
     <!-- Header -->
     <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
@@ -73,6 +77,7 @@
                 <a href="#gallery" class="text-gray-600 hover:text-blue-600 transition">갤러리</a>
                 <a href="#history" class="text-gray-600 hover:text-blue-600 transition">연혁</a>
                 <a href="#technology" class="text-gray-600 hover:text-blue-600 transition">핵심기술</a>
+                <a href="#research-development" class="text-gray-600 hover:text-blue-600 transition">연구개발</a>
                 <a href="#products" class="text-gray-600 hover:text-blue-600 transition">제품소개</a>
                 <a href="#performance" class="text-gray-600 hover:text-blue-600 transition">납품실적</a>
                 <a href="#contact"
@@ -88,6 +93,7 @@
             <a href="#gallery" class="block py-2 text-gray-600 hover:text-blue-600">갤러리</a>
             <a href="#history" class="block py-2 text-gray-600 hover:text-blue-600">연혁</a>
             <a href="#technology" class="block py-2 text-gray-600 hover:text-blue-600">핵심기술</a>
+            <a href="#research-development" class="block py-2 text-gray-600 hover:text-blue-600">연구개발</a>
             <a href="#products" class="block py-2 text-gray-600 hover:text-blue-600">제품소개</a>
             <a href="#performance" class="block py-2 text-gray-600 hover:text-blue-600">납품실적</a>
             <a href="#contact"
@@ -99,7 +105,6 @@
     <section id="hero" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
         <!-- Video Background -->
         <video id="hero-video" autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <!-- The video source is now pointing to the GitHub URL -->
             <source src="https://github.com/kimi17-bot/GRPKorea/blob/main/grpkorea_hero.mp4?raw=true" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -172,7 +177,7 @@
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="py-20">
+        <section id="gallery" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">갤러리</h2>
                 <p class="section-subtitle">GRP Korea의 활동 및 제품 사진들입니다.</p>
@@ -263,12 +268,12 @@
         </section>
 
         <!-- Technology Section -->
-        <section id="technology" class="py-20">
+        <section id="technology" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">핵심 기술</h2>
                 <p class="section-subtitle">GRP Korea의 경쟁력은 독보적인 기술력에서 나옵니다.</p>
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
                                 <i data-lucide="wind"></i>
@@ -288,7 +293,7 @@
                                 <i data-lucide="check-circle" class="text-green-500 mr-2"></i>복잡한 형상 및 코어 작업에 효율적</li>
                         </ul>
                     </div>
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
                                 <i data-lucide="shield"></i>
@@ -313,8 +318,45 @@
             </div>
         </section>
 
+        <!-- Research and Development Section -->
+        <section id="research-development" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">연구개발 (Research & Development)</h2>
+                <p class="section-subtitle">미래 해양 기술을 선도하는 GRP Korea의 혁신적인 연구개발 프로젝트를 소개합니다.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- R&D Card 1: Text -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md md:col-span-1">
+                         <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
+                                <i data-lucide="atom"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold">수소추진시스템</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            친환경 선박 기술의 핵심인 수소연료전지 기반 추진 시스템을 개발하고 있습니다. 
+                            탄소 배출 없는 미래 해양 시대를 열어가기 위한 GRP Korea의 끊임없는 도전입니다.
+                        </p>
+                    </div>
+                    <!-- R&D Card 2: Image -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://github.com/kimi17-bot/GRPKorea/blob/main/stress%20calxulator.png?raw=true" alt="Pressure Vessel Design Tool" class="w-full h-64 object-contain p-4 bg-gray-100">
+                         <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-center">압력 용기 설계 툴</h3>
+                        </div>
+                    </div>
+                    <!-- R&D Card 3: Image -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://github.com/kimi17-bot/GRPKorea/blob/main/pressure_cauculator.png?raw=true" alt="Hydrogen Storage Vessel Calculator" class="w-full h-64 object-contain p-4 bg-gray-100">
+                        <div class="p-4 bg-white">
+                            <h3 class="text-lg font-semibold text-center">수소 저장 용기 계산기</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Products Section -->
-        <section id="products" class="py-20 bg-white">
+        <section id="products" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">제품 소개</h2>
                 <p class="section-subtitle">다양한 임무와 환경에 최적화된 GRP Korea의 제품 라인업을 만나보세요.</p>
@@ -392,7 +434,7 @@
         </section>
 
         <!-- Delivery Performance Section -->
-        <section id="performance" class="py-20">
+        <section id="performance" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">주요 납품 실적</h2>
                 <p class="section-subtitle">정부 기관 및 국내외 유수 기업들이 GRP Korea의 기술력을 신뢰합니다.</p>
@@ -652,16 +694,17 @@
         const soundOnIcon = document.getElementById('sound-on-icon');
         const soundOffIcon = document.getElementById('sound-off-icon');
 
-        soundButton.addEventListener('click', () => {
-            const isMuted = heroVideo.muted;
-            heroVideo.muted = !isMuted;
-            soundOffIcon.classList.toggle('hidden', !isMuted);
-            soundOnIcon.classList.toggle('hidden', isMuted);
-        });
+        if (heroVideo && soundButton) {
+            soundButton.addEventListener('click', () => {
+                const isMuted = heroVideo.muted;
+                heroVideo.muted = !isMuted;
+                soundOffIcon.classList.toggle('hidden', !isMuted);
+                soundOnIcon.classList.toggle('hidden', isMuted);
+            });
+        }
 
     </script>
 </body>
 
 </html>
-
 
