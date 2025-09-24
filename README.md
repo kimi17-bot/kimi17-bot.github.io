@@ -13,10 +13,6 @@
     <style>
         body {
             font-family: 'Noto Sans KR', 'Inter', sans-serif;
-            background-image: url('https://github.com/kimi17-bot/GRPKorea/blob/main/1100_real.png?raw=true');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
         }
 
         .section-title {
@@ -66,7 +62,7 @@
     </style>
 </head>
 
-<body class="text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
     <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
@@ -105,6 +101,7 @@
     <section id="hero" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
         <!-- Video Background -->
         <video id="hero-video" autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <!-- The video source is now pointing to the GitHub URL -->
             <source src="https://github.com/kimi17-bot/GRPKorea/blob/main/grpkorea_hero.mp4?raw=true" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -177,7 +174,7 @@
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="py-20 bg-gray-50">
+        <section id="gallery" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">갤러리</h2>
                 <p class="section-subtitle">GRP Korea의 활동 및 제품 사진들입니다.</p>
@@ -268,12 +265,12 @@
         </section>
 
         <!-- Technology Section -->
-        <section id="technology" class="py-20 bg-gray-50">
+        <section id="technology" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">핵심 기술</h2>
                 <p class="section-subtitle">GRP Korea의 경쟁력은 독보적인 기술력에서 나옵니다.</p>
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
                                 <i data-lucide="wind"></i>
@@ -293,7 +290,7 @@
                                 <i data-lucide="check-circle" class="text-green-500 mr-2"></i>복잡한 형상 및 코어 작업에 효율적</li>
                         </ul>
                     </div>
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-100 text-blue-600 p-3 rounded-full mr-4">
                                 <i data-lucide="shield"></i>
@@ -356,7 +353,7 @@
         </section>
 
         <!-- Products Section -->
-        <section id="products" class="py-20 bg-gray-50">
+        <section id="products" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">제품 소개</h2>
                 <p class="section-subtitle">다양한 임무와 환경에 최적화된 GRP Korea의 제품 라인업을 만나보세요.</p>
@@ -434,7 +431,7 @@
         </section>
 
         <!-- Delivery Performance Section -->
-        <section id="performance" class="py-20 bg-gray-50">
+        <section id="performance" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">주요 납품 실적</h2>
                 <p class="section-subtitle">정부 기관 및 국내외 유수 기업들이 GRP Korea의 기술력을 신뢰합니다.</p>
@@ -694,14 +691,12 @@
         const soundOnIcon = document.getElementById('sound-on-icon');
         const soundOffIcon = document.getElementById('sound-off-icon');
 
-        if (heroVideo && soundButton) {
-            soundButton.addEventListener('click', () => {
-                const isMuted = heroVideo.muted;
-                heroVideo.muted = !isMuted;
-                soundOffIcon.classList.toggle('hidden', !isMuted);
-                soundOnIcon.classList.toggle('hidden', isMuted);
-            });
-        }
+        soundButton.addEventListener('click', () => {
+            const isMuted = heroVideo.muted;
+            heroVideo.muted = !isMuted;
+            soundOffIcon.classList.toggle('hidden', !isMuted);
+            soundOnIcon.classList.toggle('hidden', isMuted);
+        });
 
     </script>
 </body>
